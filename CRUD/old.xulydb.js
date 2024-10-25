@@ -1,6 +1,6 @@
 
 
-const _user = require("../model/user.model")
+const _user = require("../model/old.user.model")
 const bcrypt = require('bcrypt');
 
 async function docUser(){

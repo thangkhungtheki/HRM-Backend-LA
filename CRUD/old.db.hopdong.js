@@ -1,4 +1,4 @@
-const _hopdong = require('../model/hopdong.model')
+const _hopdong = require('../model/old.hopdong.model')
 
 async function doc_hopdong(){
     let docs = await _hopdong.find()
