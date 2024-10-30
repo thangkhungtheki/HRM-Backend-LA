@@ -4,14 +4,14 @@ const http = require('http');
 const { Server } = require('socket.io');
 
 const server = http.createServer(app);
-// const io = new Server(4500,{
-//   cors: {
-//     origin: ["http://172.16.1.84:3000","http://127.0.0.1:3000"],
-//     methods: ["GET", "POST"],
-//     allowedHeaders: ["my-custom-header"],
-//     credentials: true
-//   }
-// });
+const io = new Server(4500,{
+  cors: {
+    origin: ["http://172.16.1.84:3000","http://127.0.0.1:3000"],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["my-custom-header"],
+    credentials: true
+  }
+});
 
 // // Middleware để lấy giá trị header
 

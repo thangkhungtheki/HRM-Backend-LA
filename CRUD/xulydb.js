@@ -1,6 +1,6 @@
 
 
-const _user = require("../model/old.user.model")
+const _user = require("../model/user.model")
 const bcrypt = require('bcrypt');
 
 async function docUser(){
@@ -10,17 +10,7 @@ async function docUser(){
 
 
 
-async function find(users){
-    let doc = await _user.findOne({username: users})
-    
-    if(doc.role == 'admin'){
-        //console.log(doc)
-        return true
-    } 
-    else {
-        return false
-    }
-}
+
 async function timuservaupdate(username, newPassword) {
   try {
     // Find the user by username
@@ -48,6 +38,5 @@ async function timuservaupdate(username, newPassword) {
 
 module.exports = {
     docUser,
-    find,
     timuservaupdate
 }

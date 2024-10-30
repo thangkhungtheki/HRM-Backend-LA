@@ -18,4 +18,4 @@ schema.methods.validPassword =  (password, thispassword) => {
     return bcrypt.compareSync(password, thispassword)
 }
 
-module.exports = mongooge.model('User', schema)
+module.exports = mongooge.model('users', schema , 'users')
