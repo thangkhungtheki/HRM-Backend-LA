@@ -30,7 +30,7 @@ app.use(passport.session());
 
 mongoose.connect(process.env.DATABASE_URL);
 app.use('/', router)
-app.use('/newrouter/', newrouter)
+app.use('/hrm/', newrouter)
 
 
 module.exports = app;
