@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken')
 const secret = "taolathangkhungtheki"
 const jwtauth = require("./jwtAuthentica")
 
-const xulyaxios = require('../xulyaxios')
+// const xulyaxios = require('../xulyaxios')
 const xulydb = require('../CRUD/xulydb')
 
 

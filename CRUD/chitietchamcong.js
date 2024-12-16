@@ -5,6 +5,12 @@ async function doc_chitietchamcong(){
     return docs
 }
 
+async function ghi_chitietchamcong(docx) {
+    let doc = await chitietchamcong.insertMany(docx)
+    return true
+}
+
 module.exports = {
-    doc_chitietchamcong
+    doc_chitietchamcong,
+    ghi_chitietchamcong
 }
